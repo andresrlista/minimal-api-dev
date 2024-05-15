@@ -15,7 +15,7 @@ const nextConfig = {
           }, // replace this your actual origin
           {
             key: 'Access-Control-Allow-Origin',
-            value: 'http://localhost:3030',
+            value: '*',
           }, // replace this your actual origin
 
           {
@@ -25,7 +25,7 @@ const nextConfig = {
           {
             key: 'Access-Control-Allow-Headers',
             value:
-              'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version',
+              'X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept, Observe, Origin, Referer, User-Agent',
           }, // replace this your actual origin
         ],
       },
