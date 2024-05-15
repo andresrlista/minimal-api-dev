@@ -7,9 +7,12 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/api/:path*',
+        source: '/api/*',
         headers: [
-          { key: 'Access-Control-Allow-Origin', value: '*' }, // replace this your actual origin
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: ['http://localhost:3030', 'http://0.0.0.0:3030'],
+          }, // replace this your actual origin
         ],
       },
     ];
