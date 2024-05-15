@@ -9,6 +9,5 @@ import { board } from 'src/_mock/_kanban';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   await cors(req, res);
-
   return res.status(200).json({ board });
 }
