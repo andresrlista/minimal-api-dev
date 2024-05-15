@@ -7,16 +7,17 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/api/:path*',
+        source: '/api/',
         headers: [
-          {
-            key: 'Access-Control-Allow-Origin',
-            value: 'http://localhost:3030',
-          }, // replace this your actual origin
           {
             key: 'Access-Control-Allow-Credentials',
             value: true,
           }, // replace this your actual origin
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: 'http://localhost:3030',
+          }, // replace this your actual origin
+
           {
             key: 'Access-Control-Allow-Methods',
             value: 'GET,POST,OPTIONS',
